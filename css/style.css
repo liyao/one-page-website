@@ -1,0 +1,70 @@
+@CHARSET "utf-8";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {padding: 0;margin: 0;}
+a {text-decoration:none;}
+table {border-spacing: 0;}
+fieldset,img {border: 0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-weight: normal;font-style: normal;}
+strong {font-weight: bold;}
+ol,ul {list-style: none;margin:0;padding:0;}
+caption,th {text-align: left;}
+h1,h2,h3,h4,h5,h6 {
+	font-weight: 200;
+	font-size: 100%;
+	margin:0;
+	padding:0;
+	color:#fff;
+}
+q:before,q:after {content:'';}
+abbr,acronym { border: 0;}
+
+/* Custom CSS
+ * --------------------------------------- */
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 200;
+	src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(http://themes.googleusercontent.com/static/fonts/sourcesanspro/v6/toadOcfmlt9b38dHJxOBGMa9awK0IKUjIWABZIchFI8.woff) format('woff');
+}
+body {font-family: 'Source Sans Pro',arial,helvetica;color: #fff;}
+h1 {font-size: 6em;}
+p {font-size: 2em;margin: 0 auto;}
+a {color: #ee7b46;}
+a:hover {text-decoration: underline;}
+.highlight {color: #ee7b46;}
+.section {text-align:center;}
+.darkh1 {color: #444;}
+.lighth1 {color: #fff;}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+	#menu li {display:inline-block;margin: 10px;color: #000;}
+	#menu li.active {border-bottom: 2px solid #ee7b46;}
+	#menu li a {text-decoration:none;color: #fff;}
+	#menu li:hover {border-bottom: 2px solid #ee7b46;}
+	#menu li a,
+	#menu li.active a {
+		padding: 9px;
+		display:block;
+		font-size: 18px;
+		letter-spacing: 2px;
+	}
+
+.home img,.service img {margin: 20px 0 0 0;}
+	.home {background: url("../imgs/bg-header.jpg") center top no-repeat;}
+	.home p {color: #000;line-height: 2;}
+	.home .container {background: rgba(0,0,0,0.8);padding: 90px 0 15px 0;}
+.intro,.about,.contact {margin-top: 90px;}
+.about p {width: 60%;font-size: 1.3em;margin-bottom: 1em;}
+.intro p {width: 50%;font-size: 1.5em;}
+.contact h1 {margin-bottom: 20px;}
+.contact p{width: 50%;font-size: 2em;margin-bottom: 1em;}
